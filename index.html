@@ -33,26 +33,58 @@
             </div>
         </div>
     </div>
-    <div class="row bg-white">
-        <div class="col-9">
-            <h3>Orders</h3>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Orders</th>
-                        <th scope="col">Items</th>
-                        <th scope="col">Gross Sales</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                      <th scope="row">Today</th>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>$207.59</td>
-                    </tr>
-            </table>
+    <div class="container-fluid mt-3 mr-3">
+        <div class="row bg-white">
+            <div class="col-9">
+                <div class="pt-2 pb-2">
+                    <h3 class="float-left">Orders</h3>
+                    <div class="float-right">
+                        <button class="btn btn-primary btn-sm">Manage</button>
+                        <button class="btn btn-primary btn-sm">Download Report</button>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Orders</th>
+                            <th scope="col">Items</th>
+                            <th scope="col">Gross Sales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-light">
+                            <td scope="row">Today</td>
+                            <td ><span class="bg-primary text-white p-2">2</span></td>
+                            <td><span class="bg-primary text-white p-2">2</span></td>
+                            <td><span class="bg-light p-2">$207.59</span></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Yesterday</td>
+                            <td ><span class="bg-primary text-white p-2">7</span></td>
+                            <td><span class="bg-primary text-white p-2">7</span></td>
+                            <td><span class="bg-light p-2">$381.67</span></td>
+                        </tr>
+                        <tr class="bg-light">
+                            <td scope="row">Last 7 Days</td>
+                            <td ><span class="bg-primary text-white p-2">33</span></td>
+                            <td><span class="bg-primary text-white p-2">41</span></td>
+                            <td><span class="bg-light p-2">$3,226.03</span></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Unshipped Orders</td>
+                            <td ><span class="bg-primary text-white p-2">8</span></td>
+                            <td><span class="bg-primary text-white p-2">8</span></td>
+                            <td><span class="bg-light p-2">$556.05</span></td>
+                        </tr>
+                        <tr class="bg-light">
+                            <td scope="row">Returns & Cancellations</td>
+                            <td ><span class="bg-primary text-white p-2">7</span></td>
+                            <td><span class="bg-primary text-white p-2">8</span></td>
+                            <td><span class="bg-light p-2">$560.16</span></td>
+                        </tr>
+                </table>
+            </div>
         </div>
     </div>
 
