@@ -10,8 +10,8 @@
 <body>
     <div class="container-fluid bg-light border-bottom">
         <div class="container-fluid bg-white">
-        <p><span class="text-primary">My Store</span> / Dashboard</p>
-    </div>
+            <p><span class="text-primary">My Store</span> / Dashboard</p>
+        </div>
     <div class="container-fluid bg-white border-bottom">
         <div class="row">
             <div class="col-3 border-right">
@@ -33,57 +33,108 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-3 mr-3">
-        <div class="row bg-white">
-            <div class="col-9">
-                <div class="pt-2 pb-2">
-                    <h3 class="float-left">Orders</h3>
-                    <div class="float-right">
-                        <button class="btn btn-primary btn-sm">Manage</button>
-                        <button class="btn btn-primary btn-sm">Download Report</button>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-8">
+                <div class="container-fluid m-1 bg-white">
+                    <div class="py-2">
+                        <h3 class="float-left">Orders</h3>
+                        <div class="float-right">
+                            <button class="btn btn-primary btn-sm">Manage</button>
+                            <button class="btn btn-primary btn-sm">Download Report</button>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-width="100"></th>
+                                <th scope="col" data-width="100">Orders</th>
+                                <th scope="col" data-width="100">Items</th>
+                                <th scope="col" data-width="500">Gross Sales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-light">
+                                <td scope="row">Today</td>
+                                <td ><span class="bg-primary text-white p-2">2</span></td>
+                                <td><span class="bg-primary text-white p-2">2</span></td>
+                                <td><span class="bg-light p-2">$207.59</span></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Yesterday</td>
+                                <td ><span class="bg-primary text-white p-2">7</span></td>
+                                <td><span class="bg-primary text-white p-2">7</span></td>
+                                <td><span class="bg-light p-2">$381.67</span></td>
+                            </tr>
+                            <tr class="bg-light">
+                                <td scope="row">Last 7 Days</td>
+                                <td ><span class="bg-primary text-white p-2">33</span></td>
+                                <td><span class="bg-primary text-white p-2">41</span></td>
+                                <td><span class="bg-light p-2">$3,226.03</span></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Unshipped Orders</td>
+                                <td ><span class="bg-primary text-white p-2">8</span></td>
+                                <td><span class="bg-primary text-white p-2">8</span></td>
+                                <td><span class="bg-light p-2">$556.05</span></td>
+                            </tr>
+                            <tr class="bg-light">
+                                <td scope="row">Returns & Cancellations</td>
+                                <td ><span class="bg-primary text-white p-2">7</span></td>
+                                <td><span class="bg-primary text-white p-2">8</span></td>
+                                <td><span class="bg-light p-2">$560.16</span></td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="container bg-white my-2">
+                    <div>
+                        <h3 class="float-left">Most Recent Datafeed Results</h3>
+                        <button class="btn btn-sm bg-primary text-white float-right">View Full Report</button>
                     </div>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Orders</th>
-                            <th scope="col">Items</th>
-                            <th scope="col">Gross Sales</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="bg-light">
-                            <td scope="row">Today</td>
-                            <td ><span class="bg-primary text-white p-2">2</span></td>
-                            <td><span class="bg-primary text-white p-2">2</span></td>
-                            <td><span class="bg-light p-2">$207.59</span></td>
-                        </tr>
-                        <tr>
-                            <td scope="row">Yesterday</td>
-                            <td ><span class="bg-primary text-white p-2">7</span></td>
-                            <td><span class="bg-primary text-white p-2">7</span></td>
-                            <td><span class="bg-light p-2">$381.67</span></td>
-                        </tr>
-                        <tr class="bg-light">
-                            <td scope="row">Last 7 Days</td>
-                            <td ><span class="bg-primary text-white p-2">33</span></td>
-                            <td><span class="bg-primary text-white p-2">41</span></td>
-                            <td><span class="bg-light p-2">$3,226.03</span></td>
-                        </tr>
-                        <tr>
-                            <td scope="row">Unshipped Orders</td>
-                            <td ><span class="bg-primary text-white p-2">8</span></td>
-                            <td><span class="bg-primary text-white p-2">8</span></td>
-                            <td><span class="bg-light p-2">$556.05</span></td>
-                        </tr>
-                        <tr class="bg-light">
-                            <td scope="row">Returns & Cancellations</td>
-                            <td ><span class="bg-primary text-white p-2">7</span></td>
-                            <td><span class="bg-primary text-white p-2">8</span></td>
-                            <td><span class="bg-light p-2">$560.16</span></td>
-                        </tr>
-                </table>
+            </div>
+            <div class="col-4">
+                <div class="container m-1 bg-white border-light p-1">
+                    <div class="clearfix">
+                        <h3 class="float-left py-2">Messages</h3>
+                        <button class="btn btn-primary btn-sm float-right ">Inbox</button>
+                    </div>
+                    <div class="clearfix">
+                        <p class="float-left">New Mail</p>
+                        <p class="float-right"><span class="bg-success text-white px-2">1</span></p>
+                    </div>
+                    <div class= "clearfix">
+                        <p class="float-left">Awaiting Reply</p>
+                        <p class="float-right"><span class="bg-danger text-white px-2">14</span></p>
+                    </div>
+                    <div class="clearfix">
+                        <p class="float-left">Open RMAs</p>
+                        <p class="float-right"><span class="bg-danger text-white px-2">0</span></p>
+                    </div>
+                </div>
+                <div class="container m-1 bg-white">
+                    <div class="clearfix">
+                        <h3 class="float-left py-2">Products</h3>
+                        <button class="btn btn-primary btn-sm float-right ">Manage</button>
+                    </div>
+                    <div class="clearfix">
+                        <p class="float-left">Active Products</p>
+                        <p class="float-right"><span class="bg-success text-white px-2">11,797</span></p>
+                    </div>
+                    <div class= "clearfix">
+                        <p class="float-left">Awaiting Reply</p>
+                        <p class="float-right"><span class="bg-danger text-white px-2">36,513</span></p>
+                    </div>
+                </div>
+                <div class="container m-1 bg-white">
+                    <div class="clearfix">
+                        <h3 class=" py-2">Performance (30 days)</h3>
+                    </div>
+                    <div class="clearfix">
+                        <p class="float-left">Late Shipments</p>
+                        <p class="float-right"><span class="bg-success text-white px-2">0%(0/133)</span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
