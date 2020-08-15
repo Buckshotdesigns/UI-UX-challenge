@@ -2,3 +2,7 @@
 .flip {
     transform: rotateY(180deg);
 }
+
+.fa {
+    font-size: 2em;
+}

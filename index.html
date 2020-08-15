@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI UX Challenge</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
@@ -15,18 +16,25 @@
     <div class="container-fluid bg-white border-bottom">
         <div class="row">
             <div class="col-3 border-right">
-                <p>Todays Orders</p>
-                    <!-- <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart2 flip p-3 bg-primary rounded-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                    </svg> -->
-                    <i class="fas fa-shopping-cart"></i>
-                  
+                <p class="text-center">Todays Orders</p>
+                <div>
+                    <i class="fa fa-shopping-cart flip text-white bg-primary p-2 rounded-circle float-left"></i>
+                    <h3 class="float-right">2</h3>
+                </div>
             </div>
             <div class="col-3 border-right">
-                <p>Todays Sales</p>
+                <p class="text-center">Todays Sales</p>
+                <div>
+                    <i class="fa fa-dollar text-white bg-success px-3 py-2 rounded-circle float-left"></i>
+                    <h3 class="float-right">$207.59</h3>
+                </div>
             </div>
             <div class="col-3 border-right">
-                <p>Active Products</p>
+                <p class="text-center">Active Products</p>
+                <div>
+                    <i class="fa fa-box text-white bg-primary px-3 py-2 rounded-circle float-left"></i>
+                    <h3 class="float-right">11,797</h3>
+                </div>
             </div>
             <div class="col-3">
                 <p>Current Invoice</p>
@@ -44,7 +52,7 @@
                             <button class="btn btn-primary btn-sm">Download Report</button>
                         </div>
                     </div>
-                    <table class="table">
+                    <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th scope="col" data-width="100"></th>
@@ -54,11 +62,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="bg-light">
-                                <td scope="row">Today</td>
-                                <td ><span class="bg-primary text-white p-2">2</span></td>
-                                <td><span class="bg-primary text-white p-2">2</span></td>
-                                <td><span class="bg-light p-2">$207.59</span></td>
+                            <tr>
+                                <td scope="row" width="30%">Today</td>
+                                <td width="10%"><span class="bg-primary text-white p-2">2</span></td>
+                                <td width="10%"><span class="bg-primary text-white p-2">2</span></td>
+                                <td width="100%"><span class="bg-light p-2">$207.59</span></td>
                             </tr>
                             <tr>
                                 <td scope="row">Yesterday</td>
@@ -66,7 +74,7 @@
                                 <td><span class="bg-primary text-white p-2">7</span></td>
                                 <td><span class="bg-light p-2">$381.67</span></td>
                             </tr>
-                            <tr class="bg-light">
+                            <tr>
                                 <td scope="row">Last 7 Days</td>
                                 <td ><span class="bg-primary text-white p-2">33</span></td>
                                 <td><span class="bg-primary text-white p-2">41</span></td>
@@ -78,7 +86,7 @@
                                 <td><span class="bg-primary text-white p-2">8</span></td>
                                 <td><span class="bg-light p-2">$556.05</span></td>
                             </tr>
-                            <tr class="bg-light">
+                            <tr>
                                 <td scope="row">Returns & Cancellations</td>
                                 <td ><span class="bg-primary text-white p-2">7</span></td>
                                 <td><span class="bg-primary text-white p-2">8</span></td>
@@ -87,10 +95,30 @@
                     </table>
                 </div>
                 <div class="container bg-white my-2">
-                    <div>
+                    <div class="clearfix">
                         <h3 class="float-left">Most Recent Datafeed Results</h3>
                         <button class="btn btn-sm bg-primary text-white float-right">View Full Report</button>
                     </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td scope="row"  width="40%">Last Updated On</td>
+                                <td class="text-primary">February 18,2019 at 10:02:28 PM PST</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Products in Feed</td>
+                                <td><span class="bg-light">20,974</span</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Products Added</td>
+                                <td><span class="bg-success text-white">2</span></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Products Updated</td>
+                                <td><span class="bg-success text-white">11,795</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="col-4">
@@ -137,10 +165,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-
     </div>
     
 </body>
