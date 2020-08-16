@@ -3,6 +3,11 @@
     transform: rotateY(180deg);
 }
 
-.fa {
+.far, 
+.fa, 
+.fas {
+    font-weight: 900;
+}
+.large-icon {
     font-size: 2em;
 }

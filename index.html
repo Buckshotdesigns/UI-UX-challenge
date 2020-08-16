@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI UX Challenge</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
@@ -18,26 +18,30 @@
             <div class="col-3 border-right">
                 <p class="text-center">Todays Orders</p>
                 <div>
-                    <i class="fa fa-shopping-cart flip text-white bg-primary p-2 rounded-circle float-left"></i>
+                    <i class="fas fa-shopping-cart flip text-white bg-primary p-2 rounded-circle float-left"></i>
                     <h3 class="float-right">2</h3>
                 </div>
             </div>
             <div class="col-3 border-right">
                 <p class="text-center">Todays Sales</p>
                 <div>
-                    <i class="fa fa-dollar text-white bg-success px-3 py-2 rounded-circle float-left"></i>
+                    <i class="fas fa-dollar-sign text-white bg-success px-3 py-2 rounded-circle float-left"></i>
                     <h3 class="float-right">$207.59</h3>
                 </div>
             </div>
             <div class="col-3 border-right">
                 <p class="text-center">Active Products</p>
                 <div>
-                    <i class="fa fa-box text-white bg-primary px-3 py-2 rounded-circle float-left"></i>
+                    <i class="fas fa-box text-white bg-primary px-3 py-2 rounded-circle float-left"></i>
                     <h3 class="float-right">11,797</h3>
                 </div>
             </div>
             <div class="col-3">
-                <p>Current Invoice</p>
+                <p class="text-center">Current Invoice</p>
+                <div>
+                    <i class="far fa-file-alt text-white bg-danger px-3 py-2 rounded-circle float-left"></i>
+                    <h3 class="float-right">$341.68</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -48,8 +52,8 @@
                     <div class="py-2">
                         <h3 class="float-left">Orders</h3>
                         <div class="float-right">
-                            <button class="btn btn-primary btn-sm">Manage</button>
-                            <button class="btn btn-primary btn-sm">Download Report</button>
+                            <button class="btn btn-primary btn-sm"><i class="far fa-eye text-white pr-1"></i>Manage</button>
+                            <button class="btn btn-primary btn-sm"><i class="fas fa-download text-white pr-1"></i>Download Report</button>
                         </div>
                     </div>
                     <table class="table table-striped">
@@ -97,7 +101,7 @@
                 <div class="container bg-white my-2">
                     <div class="clearfix">
                         <h3 class="float-left">Most Recent Datafeed Results</h3>
-                        <button class="btn btn-sm bg-primary text-white float-right">View Full Report</button>
+                        <button class="btn btn-sm bg-primary text-white float-right"><i class="far fa-eye text-white pr-1"></i>View Full Report</button>
                     </div>
                     <table>
                         <tbody>
@@ -125,7 +129,7 @@
                 <div class="container m-1 bg-white border-light p-1">
                     <div class="clearfix">
                         <h3 class="float-left py-2">Messages</h3>
-                        <button class="btn btn-primary btn-sm float-right ">Inbox</button>
+                        <button class="btn btn-primary btn-sm float-right "><i class="fas fa-inbox text-white pr-1"></i>Inbox</button>
                     </div>
                     <div class="clearfix">
                         <p class="float-left">New Mail</p>
@@ -143,7 +147,7 @@
                 <div class="container m-1 bg-white">
                     <div class="clearfix">
                         <h3 class="float-left py-2">Products</h3>
-                        <button class="btn btn-primary btn-sm float-right ">Manage</button>
+                        <button class="btn btn-primary btn-sm float-right "><i class="far fa-eye text-white pr-1"></i>Manage</button>
                     </div>
                     <div class="clearfix">
                         <p class="float-left">Active Products</p>
