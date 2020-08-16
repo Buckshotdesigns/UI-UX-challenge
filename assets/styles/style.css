@@ -1,4 +1,9 @@
-
+body {
+    font-size: 12px;
+}
+td {
+    font-size: 10px;
+}
 .flip {
     transform: rotateY(180deg);
 }
@@ -9,5 +14,5 @@
     font-weight: 900;
 }
 .large-icon {
-    font-size: 2em;
+    font-size: 2.5em;
 }
