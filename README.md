@@ -1,6 +1,7 @@
+# UI-UX-challenge
+
 <img src="assets/images/final-UX.png">
 
-# UI-UX-challenge
 
 ### This is a test page layout written in bootstrap V 4.0
 
